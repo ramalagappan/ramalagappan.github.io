@@ -1,0 +1,22 @@
+<style> a:link { color: orange; background-color: transparent; text-decoration:
+underline; } a:visited { color: orange; background-color: transparent;
+text-decoration: none; } a:hover { color: grey; background-color: transparent;
+text-decoration: underline; } 
+
+h1 { font-family: "Helvetica Neue", Helvetica, Arial,
+sans-serif; font-size: 40px; font-style: normal; font-variant: normal;
+font-weight: 4000; line-height: 38.5714px;} h2 { font-family: "Helvetica Neue",
+Helvetica, Arial, sans-serif;} h3 { font-family: "Helvetica Neue", Helvetica,
+Arial, sans-serif; } h4 { font-family: "Helvetica Neue", Helvetica, Arial,
+sans-serif; } p { color: #333333; font-family: "Helvetica Neue", Helvetica,
+Arial, sans-serif; } blockquote { font-family: "Helvetica Neue", Helvetica,
+Arial, sans-serif; } li {font-family: "Helvetica Neue", Helvetica, Arial,
+sans-serif;color: #333333;} ul {font-family: "Helvetica Neue", Helvetica, Arial,
+sans-serif;color: #333333;} pre { font-family: "Helvetica Neue", Helvetica,
+Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal;
+font-weight: 400; line-height: 18.5714px; } 
+
+.nobullet{
+  list-style-type: none;
+ }
+</style>

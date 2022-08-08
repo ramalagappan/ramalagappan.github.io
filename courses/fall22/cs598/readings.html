@@ -1,0 +1,154 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="header.js"></script>
+<title>CS-739: Distributed Systems</title> 
+</html>
+
+<TABLE style="width:60%" align=center>
+<TR>
+<TD >
+<p></p>
+
+<h3>Introduction</h3>
+<ul><li><a href='http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html' rel='nofollow'>Introduction to Distributed System Design</a> - Google Code University
+</li></ul>
+
+<h3>Communication</h3>
+<ul>
+	<li>Andrew D. Birrell and Bruce Jay Nelson <a href='papers/rpc.pdf' rel='nofollow'>Implementing Remote Procedure Calls</a>. ACM Trans. Comput. Syst., 2(1):39-59, 1984.</li>
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li>Anuj Kalia, Michael Kaminsky, and David Andersen. <a href='papers/nsdi19-kalia.pdf' rel='nofollow'>Datacenter RPCs can be General and Fast</a>. In 16th USENIX Symposium on Networked Systems Design and Implementation (NSDI 19), pp. 1-16, 2019.</li></ul></li>
+</ul>
+
+<h3>Ordering</h3>
+<ul>
+	<li>L. Lamport. <a href='papers/lamport-clocks.pdf' rel='nofollow'>Time, Clocks, and the Ordering of Events in a Distributed System</a>. Communications of the ACM, July 1978, pages 558-564.</li>
+	<li>M. Chandy and L. Lamport. <a href='papers/snapshots.pdf' rel='nofollow'>Distributed Snapshots: Determining Global States of Distributed Systems</a>. ACM Trans. Comput. Syst., 3(1):63-75, 1985.</li>
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li>Friedemann Mattern. <a href='papers/mattern89.pdf' rel='nofollow'>Virtual Time and Global States of Distributed Systems</a>. 1988.</li>
+	</ul></li>
+
+</ul>
+
+
+<h3>Failures</h3>
+<ul>
+	<li>Jim Gray. <a href='papers/gray85-easy.pdf' rel='nofollow'>Why do computers stop and what can be done about it?</a>. Symposium on reliability in distributed software and database systems. 1986.</li>
+	<li>Bianca Schroeder and Garth A. Gibson. <a href='papers/bianca-diskfail-07.pdf' rel='nofollow'>Disk failures in the real world: What does an MTTF of 1, 000, 000 hours mean to you?.</a>. FAST. Vol. 7. No. 1. 2007.</li>
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li>David Oppenheimer, Archana Ganapathi, and David A. Patterson. <a href='papers/oppenheimer.pdf' rel='nofollow'>Why do Internet services fail, and what can be done about it?</a>.  4th Usenix Symposium on Internet Technologies and Systems (USITS 03), 2003.</li>
+		<li>Peng Huang, Chuanxiong Guo, Lidong Zhou, Jacob Rubin Lorch, Yingnong Dang, Murali Chintalapati, and Randolph Yao. <a href='papers/grayfailure-hotos17.pdf' rel='nofollow'>Gray Failure: The Achilles' Heel of Cloud-Scale Systems</a>. Proceedings of the 16th Workshop on Hot Topics in Operating Systems (HotOS), 2017.</li>
+	</ul></li>
+
+</ul>
+
+<h3>Failure Detection</h3>
+<ul>
+	<li>Joshua Leners, Hao Wu, Wei-Lun Hung, Marcos K. Aguilera, and Michael Walfish. <a href='papers/falcon-sosp2011.pdf' rel='nofollow'>Detecting failures in distributed systems with the FALCON spy network</a>. ACM Symposium on Operating Systems Principles (SOSP 11), October 2011.</li>
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li>Peng Huang, Chuanxiong Guo, Jacob R. Lorch, Lidong Zhou, and Yingnong Dang. <a href='papers/osdi18-huang.pdf' rel='nofollow'>Capturing and Enhancing In Situ System Observability for Failure Detection</a>. 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI 18), 2018.</li>
+	</ul></li>
+</ul>
+
+<h3>Fault-Tolerance</h3>
+<h4>Replication</h4>
+<ul>
+	<li> Robbert van Renesse and  Fred B. Schneider. <a href='papers/chainrep.pdf' rel='nofollow'>Chain Replication for Supporting High Throughput and Availability</a>. OSDI 2004. </li>
+	<li> Daniel J. Scales, Mike Nelson, and Ganesh Venkitachalam <a href='papers/vm-ft.pdf' rel='nofollow'>The Design of aPractical System for Fault-Tolerant Virtual Machines</a>. OSR 2010. </li>
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li>Navin Budhiraja, Keith Marzullo, Fred B. Schneider, and Sam Toueg. <a href='papers/92-1265.pdf' rel='nofollow'>Optimal Primary-Backup Protocols</a>. International Workshop on Distributed Algorithms. Springer, Berlin, Heidelberg, 1992.</li>
+		<li>Fred B. Schneider. <a href='papers/SMSurvey.pdf' rel='nofollow'> Implementing fault-tolerant services using the state machine approach: A tutorial</a>. ACM Computing Surveys (CSUR) 22.4 (1990): 299-319.</li>
+		<li>Brendan Cully, Geoffrey Lefebvre, Dutch Meyer, Mike Feeley, Norm Hutchinson, and Andrew Warfield. <a href='papers/cully.pdf' rel='nofollow'>Remus: High availability via asynchronous virtual machine replication</a>. In Proceedings of the 5th USENIX Symposium on Networked Systems Design and Implementation (NSDI), pp. 161-174. 2008.</li>
+	</ul></li>
+</ul>
+
+
+<h4>Consensus</h4>
+<ul>
+	<li>Leslie Lamport. <a href='papers/paxos-simple-Copy.pdf' rel='nofollow'>Paxos Made Simple</a>. ACM SIGACT News, 2001.</li>
+	<li>Diego Ongaro and John Ousterhout. <a href='papers/raft.pdf' rel='nofollow'>In Search of an Understandable Consensus Algorithm (Extended Version)</a>. In 2014 USENIX Annual Technical Conference (ATC 14), 2014.</li>
+	<li>Dan RK Ports, Jialin Li, Vincent Liu, Naveen Kr Sharma, and Arvind Krishnamurthy. <a href='papers/specpaxos-nsdi15.pdf' rel='nofollow'> Designing distributed systems using approximate synchrony in data center networks</a>. In 12th USENIX Symposium on Networked Systems Design and Implementation (NSDI 15). 2015.</li>
+	<li>Iulian Moraru, David G. Andersen, and Michael Kaminsky. <a href='papers/epaxos.pdf' rel='nofollow'>There is more consensus in egalitarian parliaments.</a> In Proceedings of the Twenty-Fourth ACM Symposium on Operating Systems Principles (SOSP), 2013.
+
+	<li>Mike Burrows. <a href='papers/chubby-osdi06.pdf' rel='nofollow'>The Chubby Lock Service for Loosely-Coupled Distributed Systems</a>. OSDI 2006.</li>
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li> Barbara Liskov and James Cowling.  <a href='papers/vr-revisited.pdf' rel='nofollow'>Viewstamped replication revisited</a>. 2012. </li>
+		<li>Patrick Hunt, Mahadev Konar, Flavio Paiva Junqueira, and Benjamin Reed. <a href='papers/Hunt.pdf' rel='nofollow'>ZooKeeper: Wait-free Coordination for Internet-scale Systems.</a> In USENIX annual technical conference (ATC), 2010.</li>
+	</li></ul>
+
+</ul>
+
+<h4>Byzantine</h4>
+<ul>
+	
+	<li>Miguel Castro and Barbara Liskov. <a href='papers/osdi99.pdf' rel='nofollow'>Practical Byzantine Fault Tolerance</a>. OSDI, 1999.
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li>L. Lamport, R. Shostak, and M. Pease. <a href='papers/byzantine-generals.pdf' rel='nofollow'>The Byzantine Generals Problem</a>. ACM Transactions on Programming Languages and Systems, July 1982, pages 382-401.</li>
+		<li> Ramakrishna Kotla, Lorenzo Alvisi, Mike Dahlin, Allen Clement, and Edmund Wong. <a  href='papers/kotla07zyzzyva.pdf' rel='nofollow'>Zyzzyva: Speculative Byzantine Fault Tolerance</a>. SOSP 2007.</li>
+
+	</li></ul>
+</ul>
+
+<h3>Distributed transactions</h3>
+<ul>
+	<li>Butler Lampson, and David B. Lomet. <a href='papers/lampson-2pc.pdf' rel='nofollow'>A new presumed commit optimization for two phase commit</a>. VLDB. Vol. 93. 1993.</li>
+	<li>Corbett et al. <a href='papers/spanner-osdi2012.pdf' rel='nofollow'> Spanner: Google’s Globally-Distributed Database</a>. OSDI 2012.</li>
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li> Irene Zhang, Naveen Kr. Sharma, Adriana Szekeres, Arvind Krishnamurthy, and Dan R. K. Ports. <a  href='papers/tapir-sosp15.pdf' rel='nofollow'>Building Consistent Transactions with Inconsistent Replication</a>. SOSP 2015.
+	</li></ul>
+</ul>
+
+
+<h3>Consistency and availability</h3>
+<ul>
+
+	<li>David K. Gifford. <a href='papers/gifford79.pdf' rel='nofollow'>Weighted voting for replicated data</a>. Proceedings of the seventh ACM symposium on Operating systems principles (SOSP), 1979. </li>
+	<li>Eric Brewer. 	<a href='papers/PODC-keynote.pdf' rel='nofollow'>CAP Theorem</a>. PODC Keynote, 2000.</li>
+	<li>Collin Lee, Seo Jin Park, Ankita Kejriwal, Satoshi Matsushita, and John Ousterhout. <a href='papers/rifl.pdf' rel='nofollow'>Implementing Linearizability at Large Scale and Low Latency</a>. In Proceedings of the 25th Symposium on Operating Systems Principles (SOSP), 2015.</li>
+	<li>Syed Akbar Mehdi, Cody Littley, Natacha Crooks, Lorenzo Alvisi, Nathan Bronson, and Wyatt Lloyd. <a href='papers/occult.pdf' rel='nofollow'>I can’t believe it’s not causal! scalable causal consistency with no slowdown cascades</a>. In 14th USENIX Symposium on Networked Systems Design and Implementation (NSDI 17), 2017.</li>
+
+
+	<li>Terry et al. <a href='papers/terry95managing.pdf' rel='nofollow'>Managing update conflicts in Bayou, a weakly connected replicated storage system</a>. SOSP, 1995.
+	<li>Douglas Terry. <a href='papers/baseball-13.pdf' rel='nofollow'>Replicated data consistency explained through baseball</a>. Communications of the ACM, Dec 2013. </li>	
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li>Wyatt Lloyd, Michael J. Freedman, Michael Kaminsky, and David G. Andersen. <a href='papers/cops-sosp2011.pdf' rel='nofollow'>Don't settle for eventual: scalable causal consistency for wide-area storage with COPS</a>. In Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles (SOSP), 2011.</li>
+		<li> Lu et al. <a href='papers/240-lu.pdf' rel='nofollow'>Existential consistency: measuring and understanding consistency at Facebook.</a> In Proceedings of the 25th Symposium on Operating Systems Principles (SOSP), 2015.</li>
+	</li></ul>
+</ul>
+
+<h3>Distributed storage</h3>
+<ul>
+
+<li> R. Sandberg, D. Goldberg, S. Kleiman, D. Walsh, and B. Lyon. <a href="papers/nfs.pdf">Design and implementation of the sun network filesystem</a>. In <em>Proceedings of USENIX Summer Techincal Conference</em>, 1985.</li>
+<li> J. H. Howard, M. L. Kazar, S. G. Menees, D. A. Nichols, M. Satyanarayanan, R. N. Sidebotham, and M. J. West. <a href="papers/afs.pdf">Scale and performance in a distributed file system</a>. <em>ACM Trans. Comput. Syst.</em>, 6(1):51-81, 1988. </li>
+<li> S. Ghemawat, H. Gobioff, and S.-T. Leung. <a href="papers/gfs.pdf">The google file system</a>. <em>SIGOPS Oper. Syst. Rev.</em>, 37(5):29-43, 2003. </li>
+<li>Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, and Robert E. Gruber. <a href='papers/bigtable.pdf' rel='nofollow'>Bigtable: A Distributed Storage System for Structured Data</a>. In Seventh Symposium on Operating System Design and Implementation (OSDI), Seattle, WA, November, 2006.</li> 
+<li>Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan Kakulapati, Avinash Lakshman, Alex Pilchin, Swami Sivasubramanian, Peter Vosshall and Werner Vogels. <a href='papers/amazon-dynamo-sosp2007.pdf' rel='nofollow'>Dynamo: Amazon's Highly Available Key-Value Store</a>. Proceedings of the 21st ACM Symposium on Operating Systems Principles, Stevenson, WA, October 2007 </li>
+<li>Diego Ongaro, Stephen M. Rumble, Ryan Stutsman, John Ousterhout, and Mendel Rosenblum. <a href='papers/ramcloud-recovery.pdf' rel='nofollow'>Fast Crash Recovery in RAMCloud</a>. SOSP 2011.</li>
+	<li class = "nobullet"><i>Optional: </i> <ul>
+		<li>Edmund Nightingale, Peter M. Chen, and Jason Flinn. <a href ='papers/nightingale05.pdf'>Speculative execution in a distributed file system</a>. In SOSP 2005.</li>
+	</li></ul>
+</ul>
+
+<h3>Data analytics and ML</h3>
+<ul>
+<li>Jeffrey Dean and Sanjay Ghemawat. <a class='urllink' href='papers/dean.pdf' rel='nofollow'>MapReduce: Simplified Data Processing on Large Clusters</a>. OSDI'04.</li>
+<li>Matei Zaharia, Mosharaf Chowdhury, Tathagata Das, Ankur Dave, Justin Ma, Murphy McCauley, Michael J. Franklin, Scott Shenker, Ion Stoica. <a href='papers/Spark.pdf' rel='nofollow'>Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing</a>.  NSDI 2012. April 2012.</li>
+<li>Martín Abadi et al. <a href='papers/abadi2016tensorflow.pdf'>Tensorflow: A system for large-scale machine learning.</a>. In 12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16), 2016.</li>
+<li>Mu Li, David G. Andersen, Jun Woo Park, Alexander J. Smola, Amr Ahmed, Vanja Josifovski, James Long, Eugene J. Shekita, and Bor-Yiing Su. <a href='papers/osdi14-paper-li_mu.pdf'>Scaling distributed machine learning with the parameter server.</a>. In 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14), 2014. </li>
+<li class = "nobullet"><i>Optional: </i> <ul>
+	<li> Daniel Crankshaw, Xin Wang, Guilio Zhou, Michael J. Franklin, Joseph E. Gonzalez, and Ion Stoica. <a href='papers/nsdi17-crankshaw.pdf'>Clipper: A low-latency online prediction serving system</a>. In 14th USENIX Symposium on Networked Systems Design and Implementation (NSDI 17), 2017.</li>
+	<li>Jack Kosaian, K. V. Rashmi, and Shivaram Venkataraman. <a href='papers/sosp2019parity-models.pdf'>Parity models: erasure-coded resilience for prediction serving systems</a>. In Proceedings of the 27th ACM Symposium on Operating Systems Principles(SOSP),  2019.</li>
+</li></ul>
+</ul>
+
+<h3>Distributed ledgers</h3>
+<ul>
+<li>Satoshi Nakamoto. <a href='papers/bitcoin.pdf'>Bitcoin: A Peer-to-Peer Electronic Cash System</a>.</li>
+</ul>
+
+</TD>
+</TR>
+
+</TABLE>
