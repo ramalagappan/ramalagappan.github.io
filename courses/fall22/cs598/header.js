@@ -1,5 +1,6 @@
 document.write('\
 \
+	<br><br>\
 	<font color="E84A27">\
 	<h1 align="center">CS 598 - Storage Systems: Theory and Practice</h1>\
 	</font>\
