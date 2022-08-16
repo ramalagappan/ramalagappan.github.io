@@ -1,0 +1,31 @@
+1,Aug 24 (W),Intro,None
+1,Aug 26 (F),Write-optimized systems,LSM WiscKey
+2,Aug 31 (W),Write-optimized systems,SplinterDB PebblesDB*
+2,Sep 02 (F),Write-optimized systems,BetrFS
+3,Aug 07 (W),Crash-consistency,Intro OptFS
+3,Sep 09 (F),Crash-consistency,Alice CCFS
+4,Sep 14 (W),Modern HW/SW,Nova
+4,Sep 16 (F),Modern HW/SW,Mnemosyne
+5,Sep 21 (W),Modern HW/SW,NVM crash consistency
+5,Sep 23 (F),Modern HW/SW,XRP
+6,Sep 28 (W),Replicated storage,Intro consistency
+6,Sep 30 (F),Strongly-consistent systems,Protocols: Paxos and Raft
+7,Oct 05 (W),Strongly-consistent systems,System: Skyros
+7,Oct 07 (F),Strongly-consistent systems,Protocols: PB and Chain replication
+8,Oct 12 (W),Strongly-consistent systems,System: CRAQ
+8,Oct 14 (F),Shared-log systems,Corfu Tango
+9,Oct 19 (W),Shared-log systems,Delos
+9,Oct 21 (F),Highly-available storage,Dynamo
+10,Oct 26 (W),Highly-available storage,Bayou
+10,Oct 28 (F),Distributed file sytems,GFS
+11,Nov 02 (W),Distributed file sytems,NFS/AFS
+11,Nov 04 (F),Distributed file sytems,LineFS
+12,Nov 09 (W),Cold/archival storage,CloudyDisks EC Hitchhiker  
+12,Nov 11 (F),Data recovery,RAMCloud CopySets
+13,Nov 16 (W),Disaggregated memory,InfiniSwap
+13,Nov 18 (F),Disaggregated memory,Hydra Carbink
+14,Nov 23 (W),Fall Break,Enjoy!
+14,Nov 25 (F),Fall Break,Enjoy!
+15,Nov 30 (W),In-class presentations,NA
+15,Dec 02 (F),In-class presentations,NA
+16,Dec 07 (W),Final project reports due,NA
