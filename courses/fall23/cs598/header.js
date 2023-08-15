@@ -6,7 +6,7 @@ document.write('\
 	</font>\
 	<font color=13294B>\
 	<h2 align="center">University of Illinois Urbana-Champaign</h2>\
-	<h2 align="center">Fall 2022</h2>\
+	<h2 align="center">Fall 2023</h2>\
 	</font>\
 	<TABLE align=center>\
 	<TR>\
