@@ -1,0 +1,73 @@
+<HTML>
+<link rel="shortcut icon" href="https://illinois.edu/assets/img/branding/favicon.ico">
+<HEAD>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="header.js"></script>
+<title>CS 598 RAP - Storage Systems: Theory and Practice</title>
+
+</html>
+
+<TABLE style="width:60%" align=center>
+<TR>
+<TD >
+<p></p>
+
+<h3>Write-optimized Systems</h3>
+<ul>
+	<li>Lanyue Lu, Thanumalayan Sankaranarayana Pillai, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dusseau.<a href='https://www.usenix.org/system/files/conference/fast16/fast16-papers-lu.pdf' rel='nofollow'>WiscKey: Separating Keys from Values in SSD-conscious Storage</a>. FAST 2016.</li>
+	<li>Patrick O'Neil, Edward Cheng, Dieter Gawlick, Elizabeth O'Neil.<a href='https://www.cs.umb.edu/~poneil/lsmtree.pdf' rel='nofollow'>The Log-Structured Merge-Tree (LSM-Tree)</a>. Acta Informatica.</li>
+	<li>Pandian Raju, Rohan Kadekodi, Vijay Chidambaram, Ittai Abraham.<a href='https://www.cs.utexas.edu/~rak/papers/sosp17-pebblesdb.pdf' rel='nofollow'>PebblesDB: Building Key-Value Stores using Fragmented Log-Structured Merge Trees</a>. SOSP 17.</li>
+	<li>Alexander Conway et al.<a href='https://www.usenix.org/system/files/atc20-conway.pdf' rel='nofollow'>SplinterDB: Closing the Bandwidth Gap
+for NVMe Key-Value Stores</a>. USENIX 20.</li>
+	<li>William Jannen et al.<a href='https://www.usenix.org/system/files/conference/fast15/fast15-paper-jannen_william.pdf' rel='nofollow'>BetrFS: A Right-Optimized Write-Optimized
+File System</a>. FAST 15.</li>
+</ul>
+
+
+<h3>Storage Reliability</h3>
+<ul>
+	<li>Thanumalayan Sankaranarayana Pillai, et al.<a href='https://ramalagappan.github.io/pdfs/papers/alice.pdf' rel='nofollow'>All File Systems Are Not Created Equal: On the Complexity of Crafting Crash-Consistent Applications</a>. OSDI 2014.</li>
+	<li>Aishwarya Ganesan, et al. Redundancy Does Not Imply Fault Tolerance <a href='https://ramalagappan.github.io/pdfs/papers/redundancy.pdf' rel='nofollow'>FAST version</a> | <a href='https://ramalagappan.github.io/pdfs/papers/redundancy-login.pdf' rel='nofollow'>Magazine version</a> </li> 
+	<li>Ramnatthan Alagappan, et al.<a href='https://ramalagappan.github.io/pdfs/papers/par.pdf' rel='nofollow'>Protocol-aware Recovery for Consensus-based Storage</a>. FAST 2018.</li>
+</ul>
+
+<h3>Replicated Storage</h3>
+<ul>
+	<li>Leslie Lamport.<a href='https://lamport.azurewebsites.net/pubs/paxos-simple.pdf' rel='nofollow'>Paxos Made Simple</a></li>
+	<li>Ongaro and Ousterhout.<a href='https://web.stanford.edu/~ouster/cgi-bin/papers/raft-atc14.pdf' rel='nofollow'>In Search of an Understandable Consensus Algorithm</a>. ATC 2014.</li>
+	<li>Aishwarya Ganesan, et al.<a href='https://ramalagappan.github.io/pdfs/papers/nilext.pdf' rel='nofollow'>Exploiting Nil-Externality of Fast Replicated Storage</a>. SOSP 2021.</li>
+	<li>Renesse and Schneider. <a href='https://www.cs.cornell.edu/home/rvr/papers/OSDI04.pdf' rel='nofollow'>Chain Replication for Supporting High Throughput and Availability</a>. OSDI 2004.</li>
+	<li>Jeff Terrace and Michael J. Freedman. <a href='https://www.usenix.org/legacy/event/usenix09/tech/full_papers/terrace/terrace.pdf' rel='nofollow'>Object Storage on CRAQ</a>. ATC 2009.</li>
+</ul>
+
+
+<h3>Shared-log Designs</h3>
+<ul>
+	<li>Mahesh Balakrishnan et al.<a href='https://www.cs.yale.edu/homes/mahesh/papers/corfumain-final.pdf' rel='nofollow'>CORFU: A Shared Log Design for Flash Clusters</a></li>
+	<li>Mahesh Balakrishnan et al.<a href='http://www.cs.cornell.edu/~taozou/sosp13/tangososp.pdf' rel='nofollow'>Tango: Distributed Data Structures over a Shared Log</a></li>
+	<li>Mahesh Balakrishnan et al.<a href='https://www.usenix.org/system/files/osdi20-balakrishnan.pdf' rel='nofollow'>Virtual Consensus in Delos</a></li>
+	<li>Cong Ding et al.<a href='https://www.usenix.org/system/files/nsdi20-paper-ding.pdf' rel='nofollow'>Scalog: Seamless Reconfiguration and Total Order in a Scalable Shared Log</a></li>
+</ul>
+
+<h3>Distributed File Systems</h3>
+<ul>
+	<li>Ghemawat et al.<a href='https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf' rel='nofollow'>The Google File System</a></li>
+	<li>Sandberg<a href='https://research.cs.wisc.edu/areas/os/Qual/papers/nfs.pdf' rel='nofollow'>The Sun Network Filesystem: Design, Implementation and Experience</a></li>
+	<li>Howard et al.<a href='https://research.cs.wisc.edu/areas/os/Qual/papers/afs.pdf' rel='nofollow'>Scale and Performance in a Distributed File System </a></li>
+	<li>Nightingale et al.<a href='https://pages.cs.wisc.edu/~ra/Classes/739-sp20/papers/nightingale05.pdf' rel='nofollow'>Speculative Execution in a Distributed File System</a></li>
+	<li>Anderson et al.<a href='https://www.usenix.org/system/files/osdi20-anderson.pdf' rel='nofollow'>Assise: Performance and Availability via Client-local NVM in a Distributed File System</a></li>
+	<li>Kim et al.<a href='https://www.cs.utexas.edu/users/witchel/pubs/kim21sosp-linefs.pdf' rel='nofollow'>LineFS: Efficient SmartNIC Offload of a Distributed File System with Pipeline Parallelism</a></li>
+</ul>
+
+<h3>Distributed KV Stores</h3>
+<ul>
+	<li>DeCandia et al. <a href='https://pages.cs.wisc.edu/~ra/Classes/739-sp20/papers/amazon-dynamo-sosp2007.pdf' rel='nofollow'>Dynamo: Amazon's Highly Available Key-Value Store</a></li>
+	<li>Chang et al. <a href='https://pages.cs.wisc.edu/~ra/Classes/739-sp20/papers/bigtable.pdf' rel='nofollow'>Bigtable: A Distributed Storage System for Structured Data</a></li>
+	<li>Guerraoui et al. <a href='https://www.usenix.org/system/files/conference/osdi16/osdi16-guerraoui.pdf' rel='nofollow'>Incremental Consistency Guarantees
+for Replicated Objects</a></li>
+</ul>
+
+</TD>
+</TR>
+
+</TABLE>
