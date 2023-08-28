@@ -2,7 +2,7 @@ document.write('\
 \
 	<br><br>\
 	<font color="E84A27">\
-	<h1 align="center">CS 598 RAP - Cloud Storage Systems</h1>\
+	<h1 align="center">CS 598 RAP - Storage Systems</h1>\
 	</font>\
 	<font color=13294B>\
 	<h2 align="center">University of Illinois Urbana-Champaign</h2>\
