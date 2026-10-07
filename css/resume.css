@@ -1025,3 +1025,14 @@ footer a {
   }
 
 }
+
+/* The expanded CV navigation occupies two rows on smaller screens. */
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  body {
+    padding-top: 7rem;
+  }
+
+  html {
+    scroll-padding-top: 7.5rem;
+  }
+}
